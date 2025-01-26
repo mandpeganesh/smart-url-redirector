@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="search-bar" placeholder="Search shortcuts...">
+        
+        <div class="section">
+            <div class="shortcuts-list" id="shortcutList"></div>
+        </div>
+        <div class="section-footer">
+            <button class="add-button add-all">Add Shortcut</button>
+        </div>
+
+        <div class="section-footer buttons-row">
+            <button class="simple-button" id="exportShortcuts">Export</button>
+            <input type="file" id="importShortcuts" style="display: none;">
+            <button class="simple-button" id="importShortcuts">Import</button>
+        </div>
+        
+
+        <div class="form-overlay" id="formOverlay">
+            <div class="form-container">
+                <h2>New Shortcut</h2>
+                <div class="form-group">
+                    <input type="text" id="shortcutKey" placeholder="Shortcut Keyword">
+                    <input type="text" id="fullUrl" placeholder="Full URL">
+                    <select id="shortcutCategory">
+                        <option value="Search Engine">Search Engine</option>
+                        <option value="Social">Social</option>
+                        <option value="Work">Work</option>
+                        <option value="Video">Video</option>
+                        <option value="add-new-category">+ Add New Category</option>
+                    </select>
+                    <input type="text" id="newCategoryInput" placeholder="Enter new category" style="display: none;">
+                </div>
+                <div class="form-actions">
+                    <button class="add-button" id="saveShortcut">Save</button>
+                    <button class="cancel-button" id="cancelShortcut">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="toast" class="toast"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
