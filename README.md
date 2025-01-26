@@ -40,11 +40,11 @@ Smart URL Redirector is a Chrome extension that allows you to create custom URL 
 
 ## Screenshots
 
-![Popup](screenshots/popup.png)
+![Popup](popup.png)
 
-![Add Shortcut](screenshots/add_shortcut.png)
+![Add Shortcut](add_shortcut.png)
 
-![Suggestions](screenshots/suggestions.png)
+![Suggestions](suggestions.png)
 
 ## License
 
